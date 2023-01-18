@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+/* Selector de etiquetas  */
+h1 {
+  color: brown;
+}
+
+/* Selector de clases */
+.violeta {
+  color: violet;
+}
+
+/* Selector de atributo */
+[type="text"] {
+  border-color: coral;
+}
+[id="p1"]
+
+/* Selector de ID */
+#p1 {
+  color: blue;
+}
+
+/* Selectores combinados */
+
+header p {
+  /* Se lee de derecha (hijo) a izquierda (padre) */
+}
+
+/* header > div > p { /*--> Se usaría cuando hay un desplegable dentro del desplegable,
+  cuando se quiere ir hijo a hijo uno a uno y saltar a nieto ni abuelo
+  
+} */
+/* Hermanos */
+#p1 ~ p {
+  background-color: blue;
+}
+/* Adyacente */
+#p1 + p {
+  background-color: crimson;
+}
+article::first-line {
+  background-color: cyan;
+}
+
+article:hover {
+  background-color: blueviolet;
+}
+
+article::after {
+  content: "😒";
+}
